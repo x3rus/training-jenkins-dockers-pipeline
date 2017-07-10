@@ -14,7 +14,8 @@ DCK-COMPOSE-OPT = "--force-rm"
 ###########
 # TARGETS #
 
-all: unittest build push
+#all: unittest build push
+all: unittest 
 
 help:
 	@echo Targets:
