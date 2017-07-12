@@ -39,6 +39,8 @@ RUN /usr/local/apache2/bin/apachectl configtest
 
 COPY scripts/x3-docker-entrypoint.sh /
 
+COPY toto-bad-file /
+
 ENTRYPOINT ["/x3-docker-entrypoint.sh"]
 
 
