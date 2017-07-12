@@ -15,7 +15,7 @@ DCK-COMPOSE-OPT = "--force-rm"
 # TARGETS #
 
 #all: unittest build push
-all: unittest 
+all: unittest build-latest
 
 help:
 	@echo Targets:
@@ -32,3 +32,6 @@ build-and-test:
 
 cleanup-test:
 	cd $(DIR-VALIDATION) && docker-compose stop x3-webdav && docker-compose rm --force
+
+build-latest:
+	docker-compose build 
