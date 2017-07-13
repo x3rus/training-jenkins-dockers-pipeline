@@ -28,8 +28,7 @@ RUN sed -i 's/Require user admin/Require valid-user/g' /usr/local/apache2/conf/e
 RUN cat /usr/local/apache2/conf/extra/httpd-dav.conf
 
 RUN mkdir /usr/local/apache2/uploads /usr/local/apache2/var \
-    && chown root /usr/local/apache2/uploads /usr/local/apache2/var
-#    && chown daemon /usr/local/apache2/uploads /usr/local/apache2/var
+    && chown daemon /usr/local/apache2/uploads /usr/local/apache2/var
 
 # Validation de la configuration
 RUN /usr/local/apache2/bin/apachectl configtest
