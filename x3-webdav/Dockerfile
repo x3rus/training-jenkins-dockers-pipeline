@@ -33,8 +33,6 @@ RUN mkdir /usr/local/apache2/uploads /usr/local/apache2/var \
 # Validation de la configuration
 RUN /usr/local/apache2/bin/apachectl configtest
 
-COPY scripts/BAD_FILE  /
-
 # Volume required
 # /usr/local/apache2/user.passwd
 # /usr/local/apache2/uploads
